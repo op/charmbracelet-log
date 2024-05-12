@@ -314,7 +314,7 @@ func (l *Logger) SetColorProfile(profile termenv.Profile) {
 	l.re.SetColorProfile(profile)
 }
 
-// SetStyles sets the logger styles for the TextFormatter.
+// SetStyles sets the logger styles for the TextFormatter and JSONFormatter.
 func (l *Logger) SetStyles(s *Styles) {
 	if s == nil {
 		s = DefaultStyles()
